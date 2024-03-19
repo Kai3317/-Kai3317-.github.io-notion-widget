@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+	
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: "Varela Round", sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #f7f2eb;
+		}
+
+		.border {
+			border: 0px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-group"></i> Projects</a>
+		<a id=„notes“ onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pen-clip"></i> Notes</a>
+		<a id=„books“ onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book-bookmark"></i> Books</a>
+		<a id=„planner“ onclick="navigate(this.id)" href="#"> <i class="fa-regular fa-calendar-check"></i> Planner</a>
+		<a id=„programming“ onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-code"></i> Program</a>
+		<a id=„music“ onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-music"></i> Music</a>
+		<a id=“language“ onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-language"></i> Language</a>
+	
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/8b413e0a21bd442eb4743159fe3f55cd?pvs=4", '_blank').focus();
+			else if (id == „projects“)
+				window.open("https://www.notion.so/4ed40c1697134143a266b505ed305211?pvs=4", '_blank').focus();
+			else if (id == "notes")
+				window.open("https://www.notion.so/287aaf2c3fba4144a6f8d4731e6d470b?v=33b5d83e227346dfb67c5e145340df04&pvs=4", '_blank').focus();
+			else if (id == "books")
+				window.open("https://www.notion.so/9a1b5ca0f3cb4deaa63bf43f6d5937b3?pvs=4", '_blank').focus();
+			else if (id == „planner“)
+				window.open("https://www.notion.so/d86a799ac1f144f1885a26edae6b7aed?pvs=4", '_blank').focus();
+			else if (id == „programming“)
+				window.open("https://www.notion.so/e73abf0d68e549b4b6c6973c97ac84f9?pvs=4", '_blank').focus();
+			else if (id == „music“)
+				window.open("https://www.notion.so/Music-6c481115a4d04cc495cb76c9462c2968?pvs=4", '_blank'').focus();
+			else if (id == „language“)
+				window.open("https://www.notion.so/59a968b3622f4d38a35c8b4c24a6f798?pvs=4", '_blank').focus();
+
+			
+			
+		}
+	</script>
+
+
+</body>
+
+</html>
